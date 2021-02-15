@@ -1,6 +1,6 @@
 'use strict';
 
-import {$} from './modules/nQuery.js';
+
 import {getSubjects} from './modules/pagexslt.js';
 
 const MENUITEMS = [
