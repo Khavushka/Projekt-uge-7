@@ -5,7 +5,7 @@
 
 <authorList 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="booksCanon.xsd">
+    xsi:noNamespaceSchemaLocation="./public/authors.xsd">
     <author>
         <firstname></firstname>
         <lastname></lastname>
