@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE schema [
+<!ENTITY euro "&#8364;">
+]>
+
+<authorList 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="booksCanon.xsd">
+    <author>
+        <firstname></firstname>
+        <lastname></lastname>
+        <birthyear></birthyear>
+        <deathyear></deathyear>
+        <birthplace></birthplace>
+        <country></country>
+        <language></language>
+        <bio></bio>
+    </author>
+
+    <author>
+        <firstname></firstname>
+        <lastname></lastname>
+        <birthyear></birthyear>
+        <deathyear></deathyear>
+        <birthplace></birthplace>
+        <country></country>
+        <language></language>
+        <bio></bio>
+    </author>
+
+    <author>
+        <firstname></firstname>
+        <lastname></lastname>
+        <birthyear></birthyear>
+        <deathyear></deathyear>
+        <birthplace></birthplace>
+        <country></country>
+        <language></language>
+        <bio></bio>
+    </author>
+</authorList>

@@ -9,7 +9,6 @@ const httpStatus = require("http-status-codes");        // http sc
 const lib = require("../private/libWebUtil");           // home grown utilities
 const experimental = require("../private/myTemplater"); // highly experimental template
 const querystring = require("querystring");
-const printContacts = require("../private/contactList"); //printring JSON file to HTML
 const date = require("../private/date");                 //get current date
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
@@ -98,9 +97,9 @@ module.exports = {
         res.end(); 
     },
 
-    contactList(req, res, data) {
+    contactList(req, res, data) {  // her skal vi lige finde ud af hva contactlist skal erstattes med
 
-        printContacts.printContacts(res);
+        printContacts.printContacts(res);  // Det samme her for printContacts
 
     }
 }
