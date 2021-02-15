@@ -10,8 +10,6 @@ const requestHandlers = {                             // application urls here
         "/start": handlers.home,
         "/side": handlers.home,
         "/about": handlers.home,
-        "/contact": handlers.home,
-        "/contactlist": handlers.contactList,
         "/notfound": handlers.notfound,
         "js": handlers.js,
         "css": handlers.css,
@@ -19,7 +17,7 @@ const requestHandlers = {                             // application urls here
         "ico": handlers.ico
     },
     POST: {
-        "/contact": handlers.receiveData
+        
     }
 }
 
