@@ -1,12 +1,13 @@
 'use strict';
 /*
  * handlers.js
- * Requesthandlers to be called by the router mechanism
+ * Requesthandlers to be called by the routing mechanism
  */
-const fs = require("fs");                               // file system access
-const httpStatus = require("http-status-codes");        // http sc
-const lib = require("../controllers/libWebUtil");       // home grown utilities
-const models = require("../models/updContacts");   // models are datahandlers
+const fs = require("fs");                                   // file system access
+const httpStatus = require("http-status-codes");
+const lib = require("./utilities/libWebUtil");              // home grown utilities
+const experimental = require("../views/myTemplater");       // highly experimental template
+/*const templaterV09 = require("../views/myTemplaterV09");    // highly experimental template*/
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 const getAndServe = async function (res, path, content) {   // asynchronous
@@ -48,25 +49,46 @@ module.exports = {
         let content = "image/png";
         getAndServe(res, path, content);
     },
+    xsl(req, res) {
+        let path = "public" + req.url;
+        let content = "text/xml";
+        getAndServe(res, path, content);
+    },
+    xml(req, res) {
+        let path = "public" + req.url;
+        let content = "text/xml";
+        getAndServe(res, path, content);
+    },
     ico(req, res) {
         let path = "public" + req.url;
         let content = "image/x-icon";
         getAndServe(res, path, content);
     },
 
+    updContacts (req, res, data) {
+        let obj = lib.makeWebArrays(req, data);         // home made GET and POST objects
+        res.writeHead(httpStatus.OK, {                  // yes, write relevant header
+            "Content-Type": "text/html; charset=utf-8"
+        });
+        res.write(experimental.receipt(obj));           // home made templating for native node
+        res.end();
+    },
+    
+    xsltCS(req, res) {
+        res.writeHead(httpStatus.OK, {                                                  // yes, write relevant header
+            "Content-Type": "text/html; charset=utf-8"
+        });
+        res.write(templaterV09.xslt({title: "Kilroy's Pages", head: "Kilroy's XSLT"})); // home made templating for native node
+        res.end();
+    },
+
     notfound(req, res) {
+        res.writeHead(httpStatus.NOT_FOUND, {                  // yes, write relevant header
+                    "Content-Type": "text/html; charset=utf-8"
+                });
+                res.write(`<h1>${httpStatus.NOT_FOUND} Not Found</h1>`);                // home made templating for native node
+                res.end();
         console.log(`Handler 'notfound' was called for route ${req.url}`);
         res.end();
     },
-
-    contacts(req, res) {
-        models.showContacts(req, res);
-    },
-
-    async receiveContacts(req, res, data) {
-        let obj = lib.makeWebArrays(req, data);         // home made GET and POST objects
-        await models.updContacts(req, res, obj);
-        res.writeHead(httpStatus.MOVED_PERMANENTLY, {"Location": "http://localhost:3000"});
-        res.end();
-    }
 }

@@ -1,7 +1,7 @@
 'use strict';
 
 
-import {getSubjects} from './private/pagexslt.js';
+import {getSubjects} from '.../controllers/pagexslt.js';
 
 const MENUITEMS = [
     {"text": "Home", "url": "/"},

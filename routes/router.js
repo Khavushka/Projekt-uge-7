@@ -16,6 +16,9 @@ const requestHandlers = {                             // application urls here
         "js": handlers.js,
         "css": handlers.css,
         "png": handlers.png,
+        "/xslt": handlers.xsltCS,
+        "xsl": handlers.xsl,
+        "xml": handlers.xml,
         "ico": handlers.ico
     },
     POST: {
