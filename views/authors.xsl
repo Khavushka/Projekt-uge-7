@@ -16,7 +16,7 @@
     </html>
   </xsl:template>
 
-  <xsl:template match="authors/author">
+  <xsl:template match="authorList/author">
     <section style="
       background-color: #ffffff;
       padding: 20px;
@@ -26,7 +26,7 @@
     </section>
   </xsl:template>
 
-  <xsl:template match="authors/author">
+  <xsl:template match="authorList/author/authorname">
     <h2>
       <section style="
       text-decoration: underline;">
@@ -35,56 +35,42 @@
     </h2>
   </xsl:template>
 
-  <xsl:template match="authors/author/firtsname">
-    <p>
-      <b>Firstname:</b>
-      <xsl:apply-templates />
-    </p>
-  </xsl:template>
-
-  <xsl:template match="authors/author/lastname">
-    <p>
-      <b>Lastname: </b>
-      <xsl:apply-templates />
-    </p>
-  </xsl:template>
-
-  <xsl:template match="authors/author/birthyear">
+  <xsl:template match="authorList/author/birthyear">
     <p>
       <b>Birthyear: </b>
       <xsl:apply-templates />
     </p>
   </xsl:template>
 
-  <xsl:template match="authors/author/deatyear">
+  <xsl:template match="authorList/author/deathyear">
     <p>
       <b>Deathyear: </b>
       <xsl:apply-templates />
     </p>
   </xsl:template>
 
-  <xsl:template match="authors/author/birthplace">
+  <xsl:template match="authorList/author/birthplace">
     <p>
       <b>Birthplace: </b>
       <xsl:apply-templates />
     </p>
   </xsl:template>
 
-  <xsl:template match="authors/author/country">
+  <xsl:template match="authorList/author/country">
     <p>
       <b>Country: </b>
       <xsl:apply-templates />
     </p>
   </xsl:template>
 
-  <xsl:template match="authors/author/language">
+  <xsl:template match="authorList/author/language">
     <p>
       <b>Language:</b>
       <xsl:apply-templates />
     </p>
   </xsl:template>
 
-  <xsl:template match="authors/author/bio">
+  <xsl:template match="authorList/author/bio">
     <p>
       <b>Bio: </b>
       <xsl:apply-templates />

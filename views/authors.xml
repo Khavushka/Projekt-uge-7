@@ -1,15 +1,16 @@
 <?xml version="1.0" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="authors.xsl"?>
+
 <!DOCTYPE schema [
-<!ENTITY euro "&#8364;">
+    <!ENTITY euro "&#8364;">
 ]>
 
-<authorList 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="authors.xsd">
+<authorList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="authors.xsd">
     <author>
-        <firstname>Matthew</firstname>
-        <lastname>Inman</lastname>
+        <authorname>
+            <firstname>Matthew</firstname>
+            <lastname>Inman</lastname>
+        </authorname>
         <birthyear>1982</birthyear>
         <deathyear></deathyear>
         <birthplace>Chino, California</birthplace>
@@ -21,8 +22,10 @@
     </author>
 
     <author>
-        <firstname>Douglas</firstname>
-        <lastname>Adams</lastname>
+        <authorname>
+            <firstname>Douglas</firstname>
+            <lastname>Adams</lastname>
+        </authorname>
         <birthyear>1952</birthyear>
         <deathyear>2001</deathyear>
         <birthplace>Cambridge</birthplace>
@@ -33,8 +36,10 @@
     </author>
 
     <author>
-        <firstname>Matthew</firstname>
-        <lastname>Mercer</lastname>
+        <authorname>
+            <firstname>Matthew</firstname>
+            <lastname>Mercer</lastname>
+        </authorname>
         <birthyear>1982</birthyear>
         <deathyear></deathyear>
         <birthplace>West Palm Beach,Florida</birthplace>
@@ -45,8 +50,10 @@
     </author>
 
     <author>
-        <firstname>Ernest</firstname>
-        <lastname>Hemingway</lastname>
+        <authorname>
+            <firstname>Ernest</firstname>
+            <lastname>Hemingway</lastname>
+        </authorname>
         <birthyear>1899</birthyear>
         <deathyear>1961</deathyear>
         <birthplace>Oak Park, Illinois</birthplace>

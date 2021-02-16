@@ -1,30 +1,31 @@
 <?xml version="1.0" standalone="yes"?>
 <!DOCTYPE schema [
-<!ENTITY euro "&#8364;">
+    <!ENTITY euro "&#8364;">
 ]>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:annotation>
-            <xs:appinfo>
+        <xs:appinfo>
                 Just testing
-            </xs:appinfo>   
-            <xs:documentation>
+            </xs:appinfo>
+        <xs:documentation>
                 Documentation for canonical books
-            </xs:documentation>   
-        </xs:annotation>
+            </xs:documentation>
+    </xs:annotation>
 
     <xs:complexType name="authorList">
-            <xs:sequence>
-                <xs:element name="author" type="myAuthors" minOccurs="0" maxOccurs="unbounded" />
-            </xs:sequence>
+        <xs:sequence>
+            <xs:element name="author" type="myAuthors" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="myAuthors">
         <xs:sequence>
+            <xs:element name="authorname" type="xs:string" />
             <xs:element name="firstname" type="xs:string" />
             <xs:element name="lastname" type="xs:string" />
-            <xs:element name="birthyear" type="xs:string" minOccurs="0"/>
-            <xs:element name="deathyear" type="xs:string" minOccurs="0"/>
+            <xs:element name="birthyear" type="xs:string" minOccurs="0" />
+            <xs:element name="deathyear" type="xs:string" minOccurs="0" />
             <xs:element name="birthplace" type="xs:string" />
             <xs:element name="country" type="xs:string" />
             <xs:element name="language" type="xs:string" />
