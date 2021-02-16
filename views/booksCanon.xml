@@ -1,12 +1,10 @@
 <?xml version="1.0" standalone="no"?>
-<?xml-stylesheet type="text/xsl" href="booksCanon.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./views/booksCanon.xsl"?>
 <!DOCTYPE schema [
-<!ENTITY euro "&#8364;">
+  <!ENTITY euro "&#8364;">
 ]>
 
-<booksCanon
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="booksCanon.xsd">
+<booksCanon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="booksCanon.xsd">
   <book ref="Llo08" mycanon="mdu,all">
     <title>How to Tell If Your Cat Is Plotting to Kill You</title>
     <edition>2</edition>
@@ -14,7 +12,7 @@
       <author>
         <firstname>Matthew</firstname>
         <lastname>Inman</lastname>
-        </author>
+      </author>
     </authors>
     <publisher>
       <name>Andrews McMeel Publishing</name>
@@ -39,7 +37,7 @@
       <author>
         <firstname>Douglas</firstname>
         <lastname>Adams</lastname>
-        </author>
+      </author>
     </authors>
     <publisher>
       <name>Pan books</name>
@@ -54,7 +52,7 @@
       <comment></comment>
     </comments>
   </book>
-  
+
   <book ref="Shu08" mycanon="mdu">
     <title>Explorer's Guide to Wildemount</title>
     <edition>1</edition>
@@ -81,7 +79,7 @@
       <comment>A Dungeons and Dragons sourcebook for players looking to run their own campaign in the world of Critical Role.</comment>
     </comments>
   </book>
-  
+
   <book ref="Nix09" mycanon="mdu">
     <title>The Sun Also Rises</title>
     <edition>1</edition>
@@ -104,5 +102,5 @@
       <comment>The ideal companion for troubled times: equal parts Continental escape and serious grappling with the question of what it means to be, and feel, lost.</comment>
     </comments>
   </book>
-  
+
 </booksCanon>
