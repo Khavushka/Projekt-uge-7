@@ -1,41 +1,57 @@
 <?xml version="1.0" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="authors.xsl"?>
 <!DOCTYPE schema [
 <!ENTITY euro "&#8364;">
 ]>
 
 <authorList 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="./public/authors.xsd">
+    xsi:schemaLocation="authors.xsd">
     <author>
-        <firstname></firstname>
-        <lastname></lastname>
-        <birthyear></birthyear>
+        <firstname>Matthew</firstname>
+        <lastname>Inman</lastname>
+        <birthyear>1982</birthyear>
         <deathyear></deathyear>
-        <birthplace></birthplace>
-        <country></country>
-        <language></language>
-        <bio></bio>
+        <birthplace>Chino, California</birthplace>
+        <country>USA</country>
+        <language>en</language>
+        <bio>Matthew lives on a dark little island in the heart of the Salish Sea. 
+        He lives with two dogs and two cats. He likes peanut butter and sushi. 
+        He hates nautically-themed bathrooms and loud noises.</bio>
     </author>
 
     <author>
-        <firstname></firstname>
-        <lastname></lastname>
-        <birthyear></birthyear>
-        <deathyear></deathyear>
-        <birthplace></birthplace>
-        <country></country>
-        <language></language>
-        <bio></bio>
+        <firstname>Douglas</firstname>
+        <lastname>Adams</lastname>
+        <birthyear>1952</birthyear>
+        <deathyear>2001</deathyear>
+        <birthplace>Cambridge</birthplace>
+        <country>United Kingdom</country>
+        <language>English</language>
+        <bio>Douglas Noel Adams was an English author, 
+        screenwriter, essayist, humorist, satirist and dramatist.</bio>
     </author>
 
     <author>
-        <firstname></firstname>
-        <lastname></lastname>
-        <birthyear></birthyear>
+        <firstname>Matthew</firstname>
+        <lastname>Mercer</lastname>
+        <birthyear>1982</birthyear>
         <deathyear></deathyear>
-        <birthplace></birthplace>
-        <country></country>
-        <language></language>
-        <bio></bio>
+        <birthplace>West Palm Beach,Florida</birthplace>
+        <country>USA</country>
+        <language>American English</language>
+        <bio>Matthew Mercer is an American voice actor known for his work with several video games, cartoons and anime.
+        In addition to his voice work, he has also developed and is the Dungeon Master for the long-running Dungeons and Dragons web series Critical Role.</bio>
+    </author>
+
+    <author>
+        <firstname>Ernest</firstname>
+        <lastname>Hemingway</lastname>
+        <birthyear>1899</birthyear>
+        <deathyear>1961</deathyear>
+        <birthplace>Oak Park, Illinois</birthplace>
+        <country>USA</country>
+        <language>American English</language>
+        <bio>Ernest Miller Hemingway was an American novelist, short-story writer, journalist, and sportsman.</bio>
     </author>
 </authorList>

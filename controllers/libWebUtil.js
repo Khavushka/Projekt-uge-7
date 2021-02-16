@@ -15,7 +15,6 @@ exports.makeWebArrays = function (req, data) {
 
     let GET = querystring.parse(qs);
     let POST = querystring.parse(data);
-    console.log(getJSONString({ GET, POST }));
     return { GET, POST };
 }
 

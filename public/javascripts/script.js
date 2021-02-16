@@ -1,14 +1,12 @@
 'use strict';
 
 
-import {getSubjects} from './modules/pagexslt.js';
+import {getSubjects} from './private/pagexslt.js';
 
 const MENUITEMS = [
     {"text": "Home", "url": "/"},
-    {"text": "Cities", "url": "/cities"},
-    {"text": "About", "url": "/about"},
-    {"text": "Contacts", "url": "/contact"},
-    {"text": "Test XSLT", "url": "/xslt"}
+    {"text": "Books", "url": "/booksCanon"},
+    {"text": "Authors", "url": "/authors"}
 ];
 
 const init = function () {

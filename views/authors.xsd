@@ -4,24 +4,33 @@
 ]>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:annotation>
+            <xs:appinfo>
+                Just testing
+            </xs:appinfo>   
+            <xs:documentation>
+                Documentation for canonical books
+            </xs:documentation>   
+        </xs:annotation>
 
-<xs:complexType name="authorList">
+    <xs:complexType name="authorList">
+            <xs:sequence>
+                <xs:element name="author" type="myAuthors" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="myAuthors">
         <xs:sequence>
-            <xs:element name="author" type="myAuthors" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="firstname" type="xs:string" />
+            <xs:element name="lastname" type="xs:string" />
+            <xs:element name="birthyear" type="xs:string" minOccurs="0"/>
+            <xs:element name="deathyear" type="xs:string" minOccurs="0"/>
+            <xs:element name="birthplace" type="xs:string" />
+            <xs:element name="country" type="xs:string" />
+            <xs:element name="language" type="xs:string" />
+            <xs:element name="bio" type="xs:string" />
         </xs:sequence>
     </xs:complexType>
 
-<xs:complexType name="myAuthors">
-        <xs:sequence>
-		<xs:element name="firstname" type="xs:string" />
-<xs:element name="lastname" type="xs:string" />
-<xs:element name="birthyear" type="xs:integer" />  (minOccurs=”0”)
-<xs:element name="deathyear" type="xs:integer" />  (minOccurs=”0”)
-<xs:element name="birthplace" type="xs:string" />
-<xs:element name="country" type="xs:string" />
-<xs:element name="language" type="xs:string" />
-<xs:element name="bio" type="xs:string" />
-	</xs:sequence>
-</xs:complexType>
-
+    <xs:element name="authorList" type="authorList" />
 </xs:schema>
