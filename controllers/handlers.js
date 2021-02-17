@@ -65,7 +65,16 @@ module.exports = {
         getAndServe(res, path, content);
     },
 
-    updContacts (req, res, data) {
+    jsonBooks (req, res, data) {
+        let obj = lib.makeWebArrays(req, data);         // home made GET and POST objects
+        res.writeHead(httpStatus.OK, {                  // yes, write relevant header
+            "Content-Type": "text/html; charset=utf-8"
+        });
+        res.write(experimental.receipt(obj));           // home made templating for native node
+        res.end();
+    },
+
+    jsonAuthors (req, res, data) {
         let obj = lib.makeWebArrays(req, data);         // home made GET and POST objects
         res.writeHead(httpStatus.OK, {                  // yes, write relevant header
             "Content-Type": "text/html; charset=utf-8"

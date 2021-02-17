@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./models/jsonAuthors.js"></script>
+
+    <title>Authors</title>
+</head>
+<body>
+    
+    <form method="post" action="/authorlibrary">
+            <div>
+                <p>
+                    Firstname: <br>
+                    <input type="text" name="firstname" required>
+                </p>
+                <p>
+                    Lastname: <br>
+                    <input type="text" name="lastname" required>
+                </p>
+                <p>
+                    Birthyear: <br>
+                    <input type="text" name="birthyear" required>
+                </p>
+                <p>
+                    Deathyear: <br>
+                    <input type="text" name="deathyear" required>
+                </p>
+                <p>
+                    Birthplace: <br>
+                    <input type="text" name="birthplace" required>
+                </p>
+                <p>
+                    Country: <br>
+                    <input type="text" name="country" required>
+                </p>
+                <p>
+                    Language: <br>
+                    <input type="text" name="language" required>
+                </p>
+                <p>
+                    Bio: <br>
+                    <input type="text" name="bio" required>
+                </p>
+                <p>
+                        <input type="submit" value="Send">
+                </p>
+                
+            </div>
+        </form>
+</body>
+</html>

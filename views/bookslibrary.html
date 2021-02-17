@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./models/jsonBooks.js"></script>
+    <title>Books</title>
+</head>
+<body>
+    <header>
+        <h1>Books Registration</h1>
+        <nav id='menu'></nav>
+    </header>
+    <main>
+        <form method="post" action="/bookslibrary">
+            <div>
+                <p>
+                    Title: <br>
+                    <input type="text" name="title" required>
+                </p>
+                <p>
+                    Edition: <br>
+                    <input type="text" name="edition" required>
+                </p>
+                <p>
+                    Firstname: <br>
+                    <input type="text" name="firstname" required>
+                </p>
+                <p>
+                    Lastname: <br>
+                    <input type="text" name="lastname" required>
+                </p>
+                <p>
+                    <p>Publisher <br>Name: <br>
+                    <input type="text" name="publisher" required>
+                </p>
+                <p>
+                    Year: <br>
+                    <input type="text" name="pubYear" required>
+                </p>
+                <p>
+                    Place: <br>
+                    <input type="text" name="pubPlace" required>
+                </p>
+            </p>
+            <p>
+                Pages: <br>
+                <input type="text" name="pages" required>
+            </p>
+            <p>
+                ISBN: <br>
+                <input type="text" name="isbn" required>
+            </p>
+            <p>
+                Price: <br>
+                <input type="text" name="price" required>
+            </p>
+            <p>
+                Currency: <br>
+                <input type="text" name="currency" required>
+            </p>
+            <p>
+                Comment: <br>
+                <input type="text" name="comment">
+            </p>
+                <p>
+                        <input type="submit" value="Send">
+                </p>
+                
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; Rainbow warriors
+        </p>
+    </footer>
+
+</body>
+</html>

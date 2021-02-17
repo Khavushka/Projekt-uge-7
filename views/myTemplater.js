@@ -1,79 +1,106 @@
 /* myTemplater.js Home made experimental templating */
 "use strict";
 
-const fs = require("fs");
-
-exports.receipt = function(obj) {
+const htmltop = function (obj) {
     let html = `<!doctype html>
 <html>
     <head>
         <meta charset="utf-8"/>
-        <title>McKilroy's First Test Template</title>
+        <title>${obj.title}</title> 
+        <script type='module' src="/script.js"></script>
     </head>
     <body>
-        <h1>Kilroy's Receipt</h1>
-        <div>
-            <p>You entered the following</p>
-            <h3>Subject</h3>
-            <p>${obj.POST.subject}</p>
+        <header>
+            <h1>${obj.head}</h1>
+            <nav id='menu'></nav>
+        </header>
+        <main>`;
+    return html;
+};
 
-            <h3>Message</h3>
-            <pre>${obj.POST.message}</pre>
+const htmltopx = function (obj) {
+    let html = `<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>${obj.title}</title> 
+        <script type='module' src="/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>${obj.head}</h1>
+            <nav id='menu'></nav>
+        </header>
+        <main>
+            <nav id='navmenu'></nav>
+            <article id='content'></article>
+`;
+    return html;
+};
 
-            <h3>Name</h3>
-            <p>${obj.POST.name}</p>
 
-            <h3>Email</h3>
-            <p>${obj.POST.email}</p>
-        </div>
-        <div>
-            <h3>We noticed, and we will get back to you asap.</h3>
-            <p><a href="/">Return to front page</a><p>
-        </div>
+const htmlbot = function () {
+    let html = `        </main>
     </body>
 </html>`;
     return html;
 };
 
+exports.contacts = function (obj) {
+    let dyndata = '<table>';
+    for (let contact of obj.data) {
+        dyndata += '<tr>';
+        dyndata += `<td>${contact.name}</td>`;
+        dyndata += `<td>${contact.email}</td>`;
+        dyndata += `<td>${contact.tstamp.slice(0,10)}</td>`;
+        dyndata += '</tr>';
+    }
+    dyndata += '</table>';
+    return htmltop(obj) + dyndata + htmlbot();
+};
 
-exports.contacts = function(obj) {
-    let htmltop = `<!doctype html>
-<html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>McKilroy's Second Test Template</title>
-        <link rel="stylesheet" href="side.css"/>
-    </head>
-    <body>
-        <header>
-            <h1>Kilroy's Contacts</h1>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/side">Side</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                    <li><a href="/contacts">List Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div>`;
-
-    let htmlbot = `        </div>
-    </body>
-</html>`;
-
-    let dynamic = "<table>";
-
-    for (let contact of obj) {
+exports.bookslibrary = function (obj) {
+    let dyndata = '<table>';
+    for (let bookslibrary of obj.data) {
+        dyndata += '<tr>';
         dynamic += '<tr>';
-        dynamic += `<td>${contact.name}</td>`;
-        dynamic += `<td>${contact.email}</td>`;
-        dynamic += `<td>${contact.phone}</td>`;
-        dynamic += '</tr>';
+            dynamic += `<td>${bookslibrary.title}</td>`
+            dynamic += `<td>${bookslibrary.edition}</td>`
+            dynamic += `<td>${bookslibrary.firstname}</td>`
+            dynamic += `<td>${bookslibrary.lastname}</td>`
+            dynamic += `<td>${bookslibrary.publisher}</td>`
+            dynamic += `<td>${bookslibrary.pubYear}</td>`
+            dynamic += `<td>${bookslibrary.pubPlace}</td>`
+            dynamic += `<td>${bookslibrary.pages}</td>`
+            dynamic += `<td>${bookslibrary.isbn}</td>`
+            dynamic += `<td>${bookslibrary.price}</td>`
+            dynamic += `<td>${bookslibrary.currency}</td>`
+            dynamic += `<td>${bookslibrary.comment}</td>`;
+            dynamic += '</tr>';
+        dyndata += '</tr>';
+    }
+    dyndata += '</table>';
+    return htmltop(obj) + dyndata + htmlbot();
+};
+
+exports.authorlibrary = function (obj) {
+    let dynamic = "<table>";
+    for (let authorlibrary of obj.data) {
+            dynamic += '<tr>';
+            dynamic += `<td>${authorlibrary.firstname}</td>`
+            dynamic += `<td>${authorlibrary.lastname}</td>`
+            dynamic += `<td>${authorlibrary.birthyear}</td>`
+            dynamic += `<td>${authorlibrary.deathyear}</td>`
+            dynamic += `<td>${authorlibrary.birthplace}</td>`
+            dynamic += `<td>${authorlibrary.country}</td>`
+            dynamic += `<td>${authorlibrary.language}</td>`
+            dynamic += `<td>${authorlibrary.bio}</td>`;
+            dynamic += '</tr>';
     }
     dynamic += "</table>";
-
-
-    return htmltop + dynamic + htmlbot;
+    return htmltop(obj) + dynamic + htmlbot();
 };
+
+exports.xslt = function (obj) {
+    return htmltopx(obj) + htmlbot();
+}

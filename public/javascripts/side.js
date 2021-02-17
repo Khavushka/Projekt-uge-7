@@ -1,7 +1,7 @@
 "use strict";
 
 const inits = function() {
-    alert("Kilroy was here!");
+    alert("Rainbow warriors were here!");
 }
 
 window.addEventListener("load", inits);
