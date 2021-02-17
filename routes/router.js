@@ -4,6 +4,9 @@
  * if yes call it, else complain
  */
 const handlers = require("../controllers/handlers");  // handlers module
+const handlersB = require("../controllers/handlersBooks");
+const handlersX = require("../controllers/handlersXslt");
+const handlersA = require("../controllers/handlerAuthors");
 const requestHandlers = {                             // application urls here
     GET: {
         "/": handlers.home,
@@ -16,14 +19,15 @@ const requestHandlers = {                             // application urls here
         "js": handlers.js,
         "css": handlers.css,
         "png": handlers.png,
-        "/xslt": handlers.xsltCS,
+        "/xslt": handlersX.xsltCS,
         "xsl": handlers.xsl,
         "xml": handlers.xml,
-        "ico": handlers.ico
+        "author":handlers.dispAuthor,
+        "books":handlers.dispBooks
     },
     POST: {
-        "/bookslibrary": handlers.receiveContacts,
-        "/authorlibrary": handlers.receiveContacts
+        "/bookslibrary": handlersB.updBooks,
+        "/authorlibrary": handlersA.updAuthors
     }
 }
 

@@ -1,6 +1,6 @@
 'use strict';
 const fs = require('fs').promises;
-const PATH = __dirname + '/json/authors.json';
+const PATH = __dirname + '/json/author.json';
 const ENC = 'utf-8';
 
 module.exports = {

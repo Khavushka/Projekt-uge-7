@@ -63,20 +63,19 @@ exports.bookslibrary = function (obj) {
     let dyndata = '<table>';
     for (let bookslibrary of obj.data) {
         dyndata += '<tr>';
-        dynamic += '<tr>';
-            dynamic += `<td>${bookslibrary.title}</td>`
-            dynamic += `<td>${bookslibrary.edition}</td>`
-            dynamic += `<td>${bookslibrary.firstname}</td>`
-            dynamic += `<td>${bookslibrary.lastname}</td>`
-            dynamic += `<td>${bookslibrary.publisher}</td>`
-            dynamic += `<td>${bookslibrary.pubYear}</td>`
-            dynamic += `<td>${bookslibrary.pubPlace}</td>`
-            dynamic += `<td>${bookslibrary.pages}</td>`
-            dynamic += `<td>${bookslibrary.isbn}</td>`
-            dynamic += `<td>${bookslibrary.price}</td>`
-            dynamic += `<td>${bookslibrary.currency}</td>`
-            dynamic += `<td>${bookslibrary.comment}</td>`;
-            dynamic += '</tr>';
+            dyndata += `<td>${bookslibrary.title}</td>`
+            dyndata += `<td>${bookslibrary.edition}</td>`
+            dyndata += `<td>${bookslibrary.firstname}</td>`
+            dyndata += `<td>${bookslibrary.lastname}</td>`
+            dyndata += `<td>${bookslibrary.publisher}</td>`
+            dyndata += `<td>${bookslibrary.pubYear}</td>`
+            dyndata += `<td>${bookslibrary.pubPlace}</td>`
+            dyndata += `<td>${bookslibrary.pages}</td>`
+            dyndata += `<td>${bookslibrary.isbn}</td>`
+            dyndata += `<td>${bookslibrary.price}</td>`
+            dyndata += `<td>${bookslibrary.currency}</td>`
+            dyndata += `<td>${bookslibrary.comment}</td>`;
+            dyndata += '</tr>';
         dyndata += '</tr>';
     }
     dyndata += '</table>';
@@ -84,21 +83,21 @@ exports.bookslibrary = function (obj) {
 };
 
 exports.authorlibrary = function (obj) {
-    let dynamic = "<table>";
+    let dyndata = "<table>";
     for (let authorlibrary of obj.data) {
-            dynamic += '<tr>';
-            dynamic += `<td>${authorlibrary.firstname}</td>`
-            dynamic += `<td>${authorlibrary.lastname}</td>`
-            dynamic += `<td>${authorlibrary.birthyear}</td>`
-            dynamic += `<td>${authorlibrary.deathyear}</td>`
-            dynamic += `<td>${authorlibrary.birthplace}</td>`
-            dynamic += `<td>${authorlibrary.country}</td>`
-            dynamic += `<td>${authorlibrary.language}</td>`
-            dynamic += `<td>${authorlibrary.bio}</td>`;
-            dynamic += '</tr>';
+            dyndata += '<tr>';
+            dyndata += `<td>${authorlibrary.firstname}</td>`
+            dyndata += `<td>${authorlibrary.lastname}</td>`
+            dyndata += `<td>${authorlibrary.birthyear}</td>`
+            dyndata += `<td>${authorlibrary.deathyear}</td>`
+            dyndata += `<td>${authorlibrary.birthplace}</td>`
+            dyndata += `<td>${authorlibrary.country}</td>`
+            dyndata += `<td>${authorlibrary.language}</td>`
+            dyndata += `<td>${authorlibrary.bio}</td>`;
+            dyndata += '</tr>';
     }
-    dynamic += "</table>";
-    return htmltop(obj) + dynamic + htmlbot();
+    dyndata += "</table>";
+    return htmltop(obj) + dyndata + htmlbot();
 };
 
 exports.xslt = function (obj) {
