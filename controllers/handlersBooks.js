@@ -5,7 +5,7 @@
  * About Contacts
  */
 const fs = require("fs"); 
-const FILENAME = __dirname + '../public/booksCanon.xml';
+const FILENAME = __dirname + '/../public/booksCanon.xml';
 const convert = require("xml-js");
 const httpStatus = require("http-status-codes");
 const lib = require("./utilities/libWebUtil");          // home grown utilities
