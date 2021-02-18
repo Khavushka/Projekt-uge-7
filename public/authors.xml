@@ -1,4 +1,4 @@
-<?xml version="1.0" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <?xml-stylesheet type="text/xsl" href="authors.xsl"?>
 
 <!DOCTYPE schema [
@@ -22,10 +22,10 @@
     </author>
 
     <author>
-        <authorname>
+        <authorsname>
             <firstname>Douglas</firstname>
             <lastname>Adams</lastname>
-        </authorname>
+        </authorsname>
         <birthyear>1952</birthyear>
         <deathyear>2001</deathyear>
         <birthplace>Cambridge</birthplace>
@@ -36,10 +36,10 @@
     </author>
 
     <author>
-        <authorname>
+        <authorsname>
             <firstname>Matthew</firstname>
             <lastname>Mercer</lastname>
-        </authorname>
+        </authorsname>
         <birthyear>1982</birthyear>
         <deathyear></deathyear>
         <birthplace>West Palm Beach,Florida</birthplace>
@@ -50,10 +50,10 @@
     </author>
 
     <author>
-        <authorname>
+        <authorsname>
             <firstname>Ernest</firstname>
             <lastname>Hemingway</lastname>
-        </authorname>
+        </authorsname>
         <birthyear>1899</birthyear>
         <deathyear>1961</deathyear>
         <birthplace>Oak Park, Illinois</birthplace>

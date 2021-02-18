@@ -5,8 +5,10 @@
   "main": "main.js",
   "dependencies": {
     "http-status-codes": "^1.4.0",
+    "js2xmlparser": "^4.0.1",
     "querystring": "^0.2.0",
-    "xml-js": "^1.6.11"
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
   },
   "scripts": {
     "checkpoint": "git add .  && git commit -F - && git push origin master ",

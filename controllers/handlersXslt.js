@@ -15,7 +15,7 @@ module.exports = {
         res.writeHead(httpStatus.OK, {                                                  // yes, write relevant header
             "Content-Type": "text/html; charset=utf-8"
         });
-        res.write(tmpl.xslt({title: "Kilroy's Pages", head: "Kilroy's XSLT"})); // home made templating for native node
+        res.write(tmpl.xslt({title: "Rainbow warriors", head: "Rainbow warriors XSLT"})); // home made templating for native node
         res.end();
     }
 }
