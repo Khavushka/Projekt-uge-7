@@ -7,7 +7,7 @@ const htmltop = function (obj) {
     <head>
         <meta charset="utf-8"/>
         <title>${obj.title}</title> 
-        <script type='module' src="/script.js"></script>
+        <script type='module' src="script.js"></script>
     </head>
     <body>
         <header>
@@ -24,7 +24,7 @@ const htmltopx = function (obj) {
     <head>
         <meta charset="utf-8"/>
         <title>${obj.title}</title> 
-        <script type='module' src="/script.js"></script>
+        <script type='module' src="script.js"></script>
     </head>
     <body>
         <header>

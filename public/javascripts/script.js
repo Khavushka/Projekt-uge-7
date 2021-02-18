@@ -1,12 +1,14 @@
 'use strict';
 
 import {$} from '/modules/nQuery.js';
-import {getSubjects} from '.../controllers/pagexslt.js';
+import {getSubjects} from '/modules/pagexslt.js';
 
 const MENUITEMS = [
     {"text": "Home", "url": "/"},
     {"text": "Books", "url": "/bookslibrary"},
-    {"text": "Authors", "url": "/authorlibrary"}
+    {"text": "Authors", "url": "/authorlibrary"},
+    {"text": "Show authors", "url": "/"},
+    {"text": "Show books", "url": "/xslt"}
 ];
 
 const init = function () {

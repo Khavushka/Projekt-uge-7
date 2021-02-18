@@ -17,16 +17,16 @@ module.exports = {
 
     dispAuthor (req, res) {
         mod.getC()
-            .then( function (author) {
+            .then( function (authorlibrary) {
                 res.writeHead(httpStatus.OK, {                  // yes, write relevant header
                     "Content-Type": "text/html; charset=utf-8"
                 });
                 let jsn = {
                             title: "Rainbow warriors author",
                             head: "Author",
-                            data: author
+                            data: authorlibrary
                         }
-                res.write(tmpl.author(jsn));                                   // home made templating for native node
+                res.write(tmpl.authorlibrary(jsn));                                   // home made templating for native node
                 res.end();
             })
             .catch( function (err) {
