@@ -5,9 +5,9 @@ import {getSubjects} from '/modules/pagexslt.js';
 
 const MENUITEMS = [
     {"text": "Home", "url": "/"},
-    {"text": "Books", "url": "/bookslibrary"},
-    {"text": "Authors", "url": "/authorlibrary"},
-    {"text": "Show authors", "url": "/"},
+    {"text": "Register Books", "url": "/bookslibrary"},
+    {"text": "Register Authors", "url": "/authorlibrary"},
+    {"text": "Show authors", "url": "/axslt"},
     {"text": "Show books", "url": "/xslt"}
 ];
 

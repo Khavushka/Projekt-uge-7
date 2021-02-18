@@ -22,23 +22,20 @@ module.exports = {
             if (err) {
                 console.log("error loading file");
             } else {
-    
                 xml2js.parseString(data, (err, result) => {
-
                 if (err) {
                     throw err;
                 }
- 
-                
-                
                 let xmlarr = [result];
-                xmlarr.push(obj);
+
+                let bookobj = {
+                    book: obj
+                }
+                xmlarr.push(bookobj);
                 console.log(xmlarr);
 
-               // let jsonstr = JSON.stringify(xmlarr);
                 const builder = new xml2js.Builder();
                 const updxml = builder.buildObject(xmlarr);
- 
 
                     fs.writeFile(FILENAME, updxml, (err) => {
                         if(err) {

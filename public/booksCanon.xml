@@ -1,106 +1,114 @@
-<?xml version="1.0" encoding="utf-8"standalone="no"?>
-<?xml-stylesheet type="text/xsl" href=".booksCanon.xsl"?>
-<!DOCTYPE schema [
-  <!ENTITY euro "&#8364;">
-]>
-
-<booksCanon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="booksCanon.xsd">
-  <book ref="Llo08" mycanon="mdu,all">
-    <title>How to Tell If Your Cat Is Plotting to Kill You</title>
-    <edition>2</edition>
-    <authors>
-      <author>
-        <firstname>Matthew</firstname>
-        <lastname>Inman</lastname>
-      </author>
-    </authors>
-    <publisher>
-      <name>Andrews McMeel Publishing</name>
-      <year>2012</year>
-      <place>Collingwood, Sydney, London</place>
-    </publisher>
-    <pages>130</pages>
-    <isbn>1449410243, 9781449410247</isbn>
-    <price>14.99</price>
-    <currency>US$</currency>
-    <comments>
-      <comment>If your cat is kneading you, that's not a sign of affection. 
-      Your cat is actually checking your internal organs for weakness. 
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+  <booksCanon xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="booksCanon.xsd">
+    <book ref="Llo08" mycanon="mdu,all">
+      <title>How to Tell If Your Cat Is Plotting to Kill You</title>
+      <edition>2</edition>
+      <authors>
+        <author>
+          <firstname>Matthew</firstname>
+          <lastname>Inman</lastname>
+        </author>
+      </authors>
+      <publisher>
+        <name>Andrews McMeel Publishing</name>
+        <year>2012</year>
+        <place>Collingwood, Sydney, London</place>
+      </publisher>
+      <pages>130</pages>
+      <isbn>1449410243, 9781449410247</isbn>
+      <price>14.99</price>
+      <currency>US$</currency>
+      <comments>
+        <comment>If your cat is kneading you, that's not a sign of affection. &#xD;
+      Your cat is actually checking your internal organs for weakness. &#xD;
       If your cat brings you a dead animal, this isn't a gift. It's a warning.</comment>
-    </comments>
+      </comments>
+    </book>
+    <book ref="Llo08" mycanon="mdu,all">
+      <title>Hitchhiker's guide to the galaxy</title>
+      <edition>1</edition>
+      <authors>
+        <author>
+          <firstname>Douglas</firstname>
+          <lastname>Adams</lastname>
+        </author>
+      </authors>
+      <publisher>
+        <name>Pan books</name>
+        <year>1979</year>
+        <place/>
+      </publisher>
+      <pages>224</pages>
+      <isbn>033025258648</isbn>
+      <price>8.32</price>
+      <currency>US$</currency>
+      <comments>
+        <comment/>
+      </comments>
+    </book>
+    <book ref="Shu08" mycanon="mdu">
+      <title>Explorer's Guide to Wildemount</title>
+      <edition>1</edition>
+      <authors>
+        <author>
+          <firstname>Matthew</firstname>
+          <lastname>Mercer</lastname>
+        </author>
+        <author>
+          <firstname>Wizards RPG Team</firstname>
+          <lastname/>
+        </author>
+      </authors>
+      <publisher>
+        <name>Wizards of the Coast</name>
+        <year>2020</year>
+        <place>USA</place>
+      </publisher>
+      <pages>304</pages>
+      <isbn>9780786966912</isbn>
+      <price>49.95</price>
+      <currency>US$</currency>
+      <comments>
+        <comment>A Dungeons and Dragons sourcebook for players looking to run their own campaign in the world of Critical Role.</comment>
+      </comments>
+    </book>
+    <book ref="Nix09" mycanon="mdu">
+      <title>The Sun Also Rises</title>
+      <edition>1</edition>
+      <authors>
+        <author>
+          <firstname>Ernest</firstname>
+          <lastname>Hemingway</lastname>
+        </author>
+      </authors>
+      <publisher>
+        <name>Fiesta</name>
+        <year>1926</year>
+        <place>London, USA</place>
+      </publisher>
+      <pages>368</pages>
+      <isbn>978-1570421662</isbn>
+      <price>18.00</price>
+      <currency>US$</currency>
+      <comments>
+        <comment>The ideal companion for troubled times: equal parts Continental escape and serious grappling with the question of what it means to be, and feel, lost.</comment>
+      </comments>
+    </book>
+    <book mycanon="mdu">
+      <title>Book</title>
+      <edition>1</edition>
+      <firstname>Me</firstname>
+      <lastname>Yes me</lastname>
+      <publisher>some guy</publisher>
+      <pubYear>2021</pubYear>
+      <pubPlace>here</pubPlace>
+      <pages>1234</pages>
+      <isbn>123456789</isbn>
+      <price>100</price>
+      <currency>USD</currency>
+      <comment>this is a book</comment>
   </book>
+  </booksCanon>
 
-  <book ref="Llo08" mycanon="mdu,all">
-    <title>Hitchhiker's guide to the galaxy</title>
-    <edition>1</edition>
-    <authors>
-      <author>
-        <firstname>Douglas</firstname>
-        <lastname>Adams</lastname>
-      </author>
-    </authors>
-    <publisher>
-      <name>Pan books</name>
-      <year>1979</year>
-      <place></place>
-    </publisher>
-    <pages>224</pages>
-    <isbn>033025258648</isbn>
-    <price>8.32</price>
-    <currency>US$</currency>
-    <comments>
-      <comment></comment>
-    </comments>
-  </book>
-
-  <book ref="Shu08" mycanon="mdu">
-    <title>Explorer's Guide to Wildemount</title>
-    <edition>1</edition>
-    <authors>
-      <author>
-        <firstname>Matthew</firstname>
-        <lastname>Mercer</lastname>
-      </author>
-      <author>
-        <firstname>Wizards RPG Team</firstname>
-        <lastname></lastname>
-      </author>
-    </authors>
-    <publisher>
-      <name>Wizards of the Coast</name>
-      <year>2020</year>
-      <place>USA</place>
-    </publisher>
-    <pages>304</pages>
-    <isbn>9780786966912</isbn>
-    <price>49.95</price>
-    <currency>US$</currency>
-    <comments>
-      <comment>A Dungeons and Dragons sourcebook for players looking to run their own campaign in the world of Critical Role.</comment>
-    </comments>
-  </book>
-
-  <book ref="Nix09" mycanon="mdu">
-    <title>The Sun Also Rises</title>
-    <edition>1</edition>
-    <authors>
-      <author>
-        <firstname>Ernest</firstname>
-        <lastname>Hemingway</lastname>
-      </author>
-    </authors>
-    <publisher>
-      <name>Fiesta</name>
-      <year>1926</year>
-      <place>London, USA</place>
-    </publisher>
-    <pages>368</pages>
-    <isbn>978-1570421662</isbn>
-    <price>18.00</price>
-    <currency>US$</currency>
-    <comments>
-      <comment>The ideal companion for troubled times: equal parts Continental escape and serious grappling with the question of what it means to be, and feel, lost.</comment>
-    </comments>
-  </book>
-
-</booksCanon>
+</root>

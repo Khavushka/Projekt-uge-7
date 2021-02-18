@@ -20,6 +20,7 @@ const requestHandlers = {                             // application urls here
         "css": handlers.css,
         "png": handlers.png,
         "/xslt": handlersX.xsltCS,
+        "/axslt": handlersX.xsltCS,
         "xsl": handlers.xsl,
         "xml": handlers.xml,
         "author":handlersA.dispAuthor,

@@ -64,7 +64,7 @@ exports.contacts = function (obj) {
 exports.bookslibrary = function (obj) {
     let dyndata = '<table>';
     for (let bookslibrary of obj.data) {
-        dyndata += '<tr>';
+        dyndata += '<tr>'
             dyndata += `<td>${bookslibrary.title}</td>`
             dyndata += `<td>${bookslibrary.edition}</td>`
             dyndata += `<td>${bookslibrary.firstname}</td>`
@@ -78,6 +78,7 @@ exports.bookslibrary = function (obj) {
             dyndata += `<td>${bookslibrary.currency}</td>`
             dyndata += `<td>${bookslibrary.comment}</td>`;
             dyndata += '</tr>';
+            dyndata +=`</books>`;
         dyndata += '</tr>';
     }
     dyndata += '</table>';
