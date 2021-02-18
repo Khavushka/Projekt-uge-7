@@ -13,7 +13,7 @@
             </xs:documentation>
     </xs:annotation>
 
-    <xs:complexType name="authorList">
+    <xs:complexType name="authorsList">
         <xs:sequence>
             <xs:element name="author" type="myAuthors" minOccurs="0" maxOccurs="unbounded" />
         </xs:sequence>
@@ -21,7 +21,7 @@
 
     <xs:complexType name="myAuthors">
         <xs:sequence>
-            <xs:element name="authorname" type="xs:string" />
+            <xs:element name="authorsname" type="xs:string" />
             <xs:element name="firstname" type="xs:string" />
             <xs:element name="lastname" type="xs:string" />
             <xs:element name="birthyear" type="xs:string" minOccurs="0" />
@@ -33,5 +33,5 @@
         </xs:sequence>
     </xs:complexType>
 
-    <xs:element name="authorList" type="authorList" />
+    <xs:element name="authorsList" type="authorsList" />
 </xs:schema>

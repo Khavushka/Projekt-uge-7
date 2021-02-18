@@ -5,12 +5,12 @@
     <!ENTITY euro "&#8364;">
 ]>
 
-<authorList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="authors.xsd">
+<authorsList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="authors.xsd">
     <author>
-        <authorname>
+        <authorsname>
             <firstname>Matthew</firstname>
             <lastname>Inman</lastname>
-        </authorname>
+        </authorsname>
         <birthyear>1982</birthyear>
         <deathyear></deathyear>
         <birthplace>Chino, California</birthplace>
@@ -61,4 +61,4 @@
         <language>American English</language>
         <bio>Ernest Miller Hemingway was an American novelist, short-story writer, journalist, and sportsman.</bio>
     </author>
-</authorList>
+</authorsList>

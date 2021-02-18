@@ -5,9 +5,9 @@
   "main": "main.js",
   "dependencies": {
     "http-status-codes": "^1.4.0",
-    "querystring": "^0.2.0"
+    "querystring": "^0.2.0",
+    "xml-js": "^1.6.11"
   },
-  "devDependencies": {},
   "scripts": {
     "checkpoint": "git add .  && git commit -F - && git push origin master ",
     "pretest": "npm install",
