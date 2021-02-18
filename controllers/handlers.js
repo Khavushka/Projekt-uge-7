@@ -65,7 +65,7 @@ module.exports = {
         getAndServe(res, path, content);
     },
 
-    jsonBooks (req, res, data) {
+    updBooks (req, res, data) {
         let obj = lib.makeWebArrays(req, data);         // home made GET and POST objects
         res.writeHead(httpStatus.OK, {                  // yes, write relevant header
             "Content-Type": "text/html; charset=utf-8"
@@ -74,7 +74,7 @@ module.exports = {
         res.end();
     },
 
-    jsonAuthors (req, res, data) {
+    updAuthors (req, res, data) {
         let obj = lib.makeWebArrays(req, data);         // home made GET and POST objects
         res.writeHead(httpStatus.OK, {                  // yes, write relevant header
             "Content-Type": "text/html; charset=utf-8"

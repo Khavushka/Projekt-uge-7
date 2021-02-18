@@ -22,8 +22,8 @@ const requestHandlers = {                             // application urls here
         "/xslt": handlersX.xsltCS,
         "xsl": handlers.xsl,
         "xml": handlers.xml,
-        "author":handlers.dispAuthor,
-        "books":handlers.dispBooks
+        "author":handlersA.dispAuthor,
+        "books":handlersB.dispBooks
     },
     POST: {
         "/bookslibrary": handlersB.updBooks,
